@@ -7,6 +7,7 @@
 
 <body>
    <div id="app"></div>
+   <div id="foot"></div>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
@@ -16,7 +17,12 @@
          <h1>Hello World!</h1>
       </div>
       ); } } ReactDOM.render(
-      <Greeting />, document.getElementById('app') );
+      <Greeting />, document.getElementById('app') ); class Footer extends React.Component { render() { return (
+      <div>
+         <h2>Built by Matt</h2>
+      </div>
+      ); } } ReactDOM.render(
+      <Footer />, document.getElementById('foot'))
    </script>
 </body>
 
